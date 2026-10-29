@@ -1,0 +1,116 @@
+/* App.css */
+.contenedor-app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #fafaf9;
+  color: #1c1917;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estilos del Menú */
+.menu-navegacion {
+  background-color: #1c1917;
+  color: #f5f5f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d97706;
+  margin: 0;
+}
+
+.menu-navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.menu-navegacion li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-navegacion li:hover {
+  color: #d97706;
+}
+
+/* Estilos de la Sección Principal */
+.seccion-principal {
+  padding: 50px 20px;
+  background-color: #fafaf9;
+  flex-grow: 1;
+}
+
+.seccion-principal h1 {
+  font-size: 2.3rem;
+  color: #292524;
+  margin-bottom: 10px;
+}
+
+.seccion-principal p {
+  color: #57534e;
+  font-size: 1.1rem;
+}
+
+.imagen-destacada {
+  border-radius: 12px;
+  margin: 20px 0;
+  max-width: 100%;
+  width: 580px;
+  height: auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón de Acción */
+.boton-accion {
+  background-color: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
+}
+
+.boton-accion:hover {
+  background-color: #b45309;
+  transform: scale(1.04);
+}
+
+.mensaje-sorpresa {
+  margin-top: 25px;
+  font-size: 17px;
+  color: #b45309;
+  background-color: #fef3c7;
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid #f59e0b;
+}
+
+/* Estilos del Footer */
+.pie-pagina {
+  background-color: #1c1917;
+  color: #a8a29e;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.pie-pagina p {
+  margin: 5px 0;
+}
