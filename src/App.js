@@ -1,16 +1,27 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./Menu";
-import SeccionPrincipal from "./SeccionPrincipal";
 import Footer from "./Footer";
-import "./App.css"; 
+import SeccionPrincipal from "./SeccionPrincipal";
+import Catalogo from "./Catalogo";
+import Chef from "./Chef";
+import Reservas from "./Reservas";
+import "./App.css";
 
 function App() {
   return (
-    <div className="contenedor-app">
-      <Menu />
-      <SeccionPrincipal />
-      <Footer />
-    </div>
+    <Router>
+      <div className="contenedor-app">
+        <Menu />
+        <Routes>
+          <Route path="/" element={<SeccionPrincipal />} />
+          <Route path="/menu" element={<Catalogo />} />
+          <Route path="/chef" element={<Chef />} />
+          <Route path="/reservas" element={<Reservas />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
